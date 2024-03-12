@@ -17,8 +17,8 @@
 package generator
 
 import (
-	"github.com/MariusVanDerWijden/FuzzyVM/filler"
-	"github.com/holiman/goevmlab/program"
+	"github.com/rgeraldes24/FuzzyVM/filler"
+	"github.com/rgeraldes24/goevmlab/program"
 )
 
 type Environment struct {

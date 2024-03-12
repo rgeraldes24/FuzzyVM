@@ -28,9 +28,9 @@ import (
 
 	"github.com/urfave/cli/v2"
 
-	"github.com/MariusVanDerWijden/FuzzyVM/benchmark"
-	"github.com/MariusVanDerWijden/FuzzyVM/fuzzer"
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/rgeraldes24/FuzzyVM/benchmark"
+	"github.com/rgeraldes24/FuzzyVM/fuzzer"
+	"github.com/theQRL/go-zond/common"
 )
 
 var benchCommand = &cli.Command{

@@ -19,10 +19,10 @@ package precompiles
 import (
 	"crypto/ecdsa"
 
-	"github.com/MariusVanDerWijden/FuzzyVM/filler"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/holiman/goevmlab/program"
+	"github.com/rgeraldes24/FuzzyVM/filler"
+	"github.com/rgeraldes24/goevmlab/program"
+	"github.com/theQRL/go-zond/common"
+	"github.com/theQRL/go-zond/crypto"
 )
 
 var ecdsaAddr = common.HexToAddress("0x1")

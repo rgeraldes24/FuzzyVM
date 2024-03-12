@@ -22,9 +22,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/MariusVanDerWijden/FuzzyVM/filler"
-	"github.com/MariusVanDerWijden/FuzzyVM/generator"
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/rgeraldes24/FuzzyVM/filler"
+	"github.com/rgeraldes24/FuzzyVM/generator"
+	"github.com/theQRL/go-zond/common"
 )
 
 func init() {

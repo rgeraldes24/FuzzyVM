@@ -19,10 +19,10 @@ package generator
 import (
 	"math/big"
 
-	"github.com/MariusVanDerWijden/FuzzyVM/filler"
-	"github.com/MariusVanDerWijden/FuzzyVM/generator/precompiles"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/holiman/goevmlab/ops"
+	"github.com/rgeraldes24/FuzzyVM/filler"
+	"github.com/rgeraldes24/FuzzyVM/generator/precompiles"
+	"github.com/rgeraldes24/goevmlab/ops"
+	"github.com/theQRL/go-zond/common"
 )
 
 var callStrategies = []Strategy{

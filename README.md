@@ -11,7 +11,7 @@ You need to have golang and go-ethereum installed
 
 ```shell
 # Clone the repo to a place of your liking using
-git clone git@github.com:MariusVanDerWijden/FuzzyVM.git
+git clone git@github.com:rgeraldes24/FuzzyVM.git
 # Enter the repo
 cd FuzzyVM
 # Build the binary

@@ -19,10 +19,10 @@ package precompiles
 import (
 	"math/big"
 
-	"github.com/MariusVanDerWijden/FuzzyVM/filler"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/crypto/bn256"
-	"github.com/holiman/goevmlab/program"
+	"github.com/rgeraldes24/FuzzyVM/filler"
+	"github.com/rgeraldes24/goevmlab/program"
+	"github.com/theQRL/go-zond/common"
+	"github.com/theQRL/go-zond/crypto/bn256"
 )
 
 var bn256pairingAddr = common.HexToAddress("0x8")
@@ -65,7 +65,7 @@ func (*bn256PairingCaller) call(p *program.Program, f *filler.Filler) error {
 // We try to create the following pairing:
 // e(aMul1 * G1, bMul1 * G2) * e(aMul2 * G1, bMul2 * G2) * ... * e(aMuln * G1, bMuln * G2) == e(G1, G2) ^ s
 // with s = sum(x: 1 -> n: (aMulx * bMulx))
-// This code is analogous to https://github.com/holiman/goevmlab/blob/master/fuzzing/bls12381.go
+// This code is analogous to https://github.com/rgeraldes24/goevmlab/blob/master/fuzzing/bls12381.go
 // Apparently it applies to barreto-naehrig curves too.
 func pairing(rounds int, f *filler.Filler) ([]*bn256.G1, []*bn256.G2) {
 	var (

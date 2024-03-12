@@ -19,8 +19,8 @@ package precompiles
 import (
 	"testing"
 
-	"github.com/MariusVanDerWijden/FuzzyVM/filler"
-	bn256 "github.com/ethereum/go-ethereum/crypto/bn256/cloudflare"
+	"github.com/rgeraldes24/FuzzyVM/filler"
+	bn256 "github.com/theQRL/go-zond/crypto/bn256/cloudflare"
 )
 
 func TestPairing(t *testing.T) {

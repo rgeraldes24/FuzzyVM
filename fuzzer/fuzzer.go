@@ -28,16 +28,15 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/eth/tracers/logger"
-	"github.com/ethereum/go-ethereum/tests"
-	"github.com/holiman/goevmlab/fuzzing"
+	"github.com/rgeraldes24/FuzzyVM/filler"
+	"github.com/rgeraldes24/FuzzyVM/generator"
+	"github.com/rgeraldes24/goevmlab/fuzzing"
+	"github.com/theQRL/go-zond/common"
+	"github.com/theQRL/go-zond/core/rawdb"
+	"github.com/theQRL/go-zond/core/vm"
+	"github.com/theQRL/go-zond/tests"
+	"github.com/theQRL/go-zond/zond/tracers/logger"
 	"golang.org/x/crypto/sha3"
-
-	"github.com/MariusVanDerWijden/FuzzyVM/filler"
-	"github.com/MariusVanDerWijden/FuzzyVM/generator"
 )
 
 var (

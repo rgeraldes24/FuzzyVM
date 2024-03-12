@@ -17,7 +17,7 @@
 package generator
 
 import (
-	"github.com/holiman/goevmlab/ops"
+	"github.com/rgeraldes24/goevmlab/ops"
 )
 
 var basicStrategies = []Strategy{

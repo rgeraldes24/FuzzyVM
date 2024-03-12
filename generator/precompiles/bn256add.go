@@ -17,10 +17,10 @@
 package precompiles
 
 import (
-	"github.com/MariusVanDerWijden/FuzzyVM/filler"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/crypto/bn256"
-	"github.com/holiman/goevmlab/program"
+	"github.com/rgeraldes24/FuzzyVM/filler"
+	"github.com/rgeraldes24/goevmlab/program"
+	"github.com/theQRL/go-zond/common"
+	"github.com/theQRL/go-zond/crypto/bn256"
 )
 
 var bn256addAddr = common.HexToAddress("0x6")

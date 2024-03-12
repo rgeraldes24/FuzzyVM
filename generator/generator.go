@@ -20,11 +20,11 @@ package generator
 import (
 	"math/big"
 
-	"github.com/MariusVanDerWijden/FuzzyVM/filler"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/holiman/goevmlab/fuzzing"
-	"github.com/holiman/goevmlab/program"
+	"github.com/rgeraldes24/FuzzyVM/filler"
+	"github.com/rgeraldes24/goevmlab/fuzzing"
+	"github.com/rgeraldes24/goevmlab/program"
+	"github.com/theQRL/go-zond/common"
+	"github.com/theQRL/go-zond/common/hexutil"
 )
 
 var (
