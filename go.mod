@@ -6,7 +6,7 @@ toolchain go1.21.5
 
 require (
 	github.com/korovkin/limiter v0.0.0-20230307205149-3d4b2b34c99d
-	github.com/rgeraldes24/goevmlab v0.0.0-20240329103124-d69381381b95
+	github.com/rgeraldes24/goevmlab v0.0.0-20240329104006-e8a53465b1fb
 	github.com/theQRL/go-zond v0.1.1
 	github.com/urfave/cli/v2 v2.27.1
 	golang.org/x/crypto v0.18.0
