@@ -137,8 +137,8 @@ github.com/prysmaticlabs/gohashtree v0.0.3-alpha h1:1EVinCWdb3Lorq7xn8DYQHf48nCc
 github.com/prysmaticlabs/gohashtree v0.0.3-alpha/go.mod h1:4pWaT30XoEx1j8KNJf3TV+E3mQkaufn7mf+jRNb/Fuk=
 github.com/rgeraldes24/go-zond v0.0.0-20240329100529-616c74c8ae60 h1:NUXo/w/kVD0LMKTJT9EW+Zfmf5E/Poc1c1NVqQs8GnQ=
 github.com/rgeraldes24/go-zond v0.0.0-20240329100529-616c74c8ae60/go.mod h1:Sg4N09L6oSx0nLf6gWJ56cFXj/MAhZduicnVMQjYVVM=
-github.com/rgeraldes24/goevmlab v0.0.0-20240405152946-c986fe335e98 h1:TDgYW0opYEw2El+dlO7RRhgD7IBaukIGRUeSI9ajszg=
-github.com/rgeraldes24/goevmlab v0.0.0-20240405152946-c986fe335e98/go.mod h1:Xi7ASMb4Y5b3sU4NOA7zudrx1AUwHg8qdVw8uTsAWgk=
+github.com/rgeraldes24/goevmlab v0.0.0-20240814151502-446b3c6250f9 h1:iANP3SaH1mnn/+HKtlYMSS/ZB+yBCzgM8bRn7oMQWuo=
+github.com/rgeraldes24/goevmlab v0.0.0-20240814151502-446b3c6250f9/go.mod h1:r8d/RKPpN/a7kU6vbgM5czgQ2fKKw2+vixQh3FqGGH8=
 github.com/rivo/uniseg v0.2.0/go.mod h1:J6wj4VEh+S6ZtnVlnTBMWIodfgj8LQOQFoIToxlJtxc=
 github.com/rivo/uniseg v0.4.4 h1:8TfxU8dW6PdqD27gjM8MVNuicgxIjxpm4K7x4jp8sis=
 github.com/rivo/uniseg v0.4.4/go.mod h1:FN3SvrM+Zdj16jyLfmOkMNblXMcoc8DfTHruCPUcx88=
