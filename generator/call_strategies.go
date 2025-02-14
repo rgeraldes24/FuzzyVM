@@ -19,9 +19,9 @@ package generator
 import (
 	"math/big"
 
-	"github.com/rgeraldes24/FuzzyVM/filler"
-	"github.com/rgeraldes24/FuzzyVM/generator/precompiles"
 	"github.com/rgeraldes24/goevmlab/ops"
+	"github.com/theQRL/FuzzyVM/filler"
+	"github.com/theQRL/FuzzyVM/generator/precompiles"
 	"github.com/theQRL/go-zond/common"
 )
 

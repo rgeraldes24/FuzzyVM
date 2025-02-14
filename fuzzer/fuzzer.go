@@ -28,9 +28,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/rgeraldes24/FuzzyVM/filler"
-	"github.com/rgeraldes24/FuzzyVM/generator"
 	"github.com/rgeraldes24/goevmlab/fuzzing"
+	"github.com/theQRL/FuzzyVM/filler"
+	"github.com/theQRL/FuzzyVM/generator"
 	"github.com/theQRL/go-zond/common"
 	"github.com/theQRL/go-zond/core/rawdb"
 	"github.com/theQRL/go-zond/core/vm"

@@ -20,7 +20,7 @@ import (
 	"crypto/rand"
 	"testing"
 
-	"github.com/rgeraldes24/FuzzyVM/filler"
+	"github.com/theQRL/FuzzyVM/filler"
 )
 
 func TestGenerator(t *testing.T) {

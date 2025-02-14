@@ -19,7 +19,7 @@ package precompiles
 import (
 	"testing"
 
-	"github.com/rgeraldes24/FuzzyVM/filler"
+	"github.com/theQRL/FuzzyVM/filler"
 	bn256 "github.com/theQRL/go-zond/crypto/bn256/cloudflare"
 )
 

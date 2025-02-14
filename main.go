@@ -14,7 +14,7 @@
 // You should have received a copy of the GNU Lesser General Public License
 // along with the fuzzy-vm library. If not, see <http://www.gnu.org/licenses/>.
 
-// Package main creates a fuzzer for Ethereum Virtual Machine (evm) implementations.
+// Package main creates a fuzzer for Zond Virtual Machine (evm) implementations.
 package main
 
 import (
@@ -28,8 +28,8 @@ import (
 
 	"github.com/urfave/cli/v2"
 
-	"github.com/rgeraldes24/FuzzyVM/benchmark"
-	"github.com/rgeraldes24/FuzzyVM/fuzzer"
+	"github.com/theQRL/FuzzyVM/benchmark"
+	"github.com/theQRL/FuzzyVM/fuzzer"
 	"github.com/theQRL/go-zond/common"
 )
 
@@ -69,7 +69,7 @@ var runCommand = &cli.Command{
 func initApp() *cli.App {
 	app := cli.NewApp()
 	app.Name = "FuzzyVM"
-	app.Usage = "Generator for Ethereum Virtual Machine tests"
+	app.Usage = "Generator for Zond Virtual Machine tests"
 	app.Commands = []*cli.Command{
 		benchCommand,
 		corpusCommand,

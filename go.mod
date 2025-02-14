@@ -1,4 +1,4 @@
-module github.com/rgeraldes24/FuzzyVM
+module github.com/theQRL/FuzzyVM
 
 go 1.22
 

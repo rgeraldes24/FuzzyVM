@@ -1,6 +1,6 @@
 # FuzzyVM [fuzz​ɛvm]
 
-A framework to fuzz Ethereum Virtual Machine implementations.
+A framework to fuzz Zond Virtual Machine implementations.
 FuzzyVM creates state tests that can be used to differential fuzz EVM implementations against each other.
 It only focus on the test generation part, the test execution is handled by [goevmlab](https://github.com/holiman/goevmlab).
 
