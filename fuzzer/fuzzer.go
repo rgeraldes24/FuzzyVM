@@ -130,19 +130,19 @@ func minimizeProgram(test *fuzzing.GstMaker, name string) (*fuzzing.GstMaker, er
 		acc.Code = code[0:i]
 		gst[name].Pre[addr] = acc
 		// Run and see if the trace still matches
-		var gethStateTest tests.StateTest
+		var gzondStateTest tests.StateTest
 		data, err := json.Marshal(gst[name])
 		if err != nil {
 			panic(err)
 		}
-		if err := json.Unmarshal(data, &gethStateTest); err != nil {
+		if err := json.Unmarshal(data, &gzondStateTest); err != nil {
 			panic(err)
 		}
 		newOutput := new(bytes.Buffer)
 		cfg := vm.Config{}
 		cfg.Tracer = logger.NewJSONLogger(&logger.Config{}, newOutput)
-		subtest := gethStateTest.Subtests()[0]
-		gethStateTest.RunNoVerify(subtest, cfg, false, rawdb.HashScheme)
+		subtest := gzondStateTest.Subtests()[0]
+		gzondStateTest.RunNoVerify(subtest, cfg, false, rawdb.HashScheme)
 		newB := newOutput.Bytes()
 		newIdx := strings.LastIndex(string(newB), "{")
 		if newIdx <= 0 {

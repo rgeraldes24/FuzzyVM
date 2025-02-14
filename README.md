@@ -1,17 +1,17 @@
-# FuzzyVM [fuzz​ɛvm]
+# FuzzyVM
 
 A framework to fuzz Zond Virtual Machine implementations.
-FuzzyVM creates state tests that can be used to differential fuzz EVM implementations against each other.
+FuzzyVM creates state tests that can be used to differential fuzz ZVM implementations against each other.
 It only focus on the test generation part, the test execution is handled by [goevmlab](https://github.com/holiman/goevmlab).
 
 ## Environment
-You need to have golang and go-ethereum installed
+You need to have golang and go-zond installed
 
 ## Install instructions
 
 ```shell
 # Clone the repo to a place of your liking using
-git clone git@github.com:rgeraldes24/FuzzyVM.git
+git clone git@github.com:theQRL/FuzzyVM.git
 # Enter the repo
 cd FuzzyVM
 # Build the binary

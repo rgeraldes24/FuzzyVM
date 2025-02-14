@@ -14,7 +14,7 @@
 // You should have received a copy of the GNU Lesser General Public License
 // along with the fuzzy-vm library. If not, see <http://www.gnu.org/licenses/>.
 
-// Package main creates a fuzzer for Zond Virtual Machine (evm) implementations.
+// Package main creates a fuzzer for Zond Virtual Machine (zvm) implementations.
 package main
 
 import (
