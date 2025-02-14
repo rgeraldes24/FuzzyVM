@@ -36,7 +36,7 @@ var (
 	minJumpDistance   = 10
 )
 
-// GenerateProgram creates a new evm program and returns
+// GenerateProgram creates a new zvm program and returns
 // a gstMaker based on it as well as its program code.
 func GenerateProgram(f *filler.Filler) (*fuzzing.GstMaker, []byte) {
 	var (
