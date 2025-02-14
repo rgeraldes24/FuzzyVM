@@ -19,12 +19,12 @@ package precompiles
 import (
 	"encoding/binary"
 
+	"github.com/rgeraldes24/FuzzyVM/filler"
 	"github.com/rgeraldes24/goevmlab/program"
-	"github.com/theQRL/FuzzyVM/filler"
 	"github.com/theQRL/go-zond/common"
 )
 
-var bigModExpAddr = common.HexToAddress("0x5")
+var bigModExpAddr, _ = common.NewAddressFromString("Z0000000000000000000000000000000000000005")
 
 type bigModExpCaller struct{}
 

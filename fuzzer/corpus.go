@@ -23,8 +23,8 @@ import (
 
 	"github.com/korovkin/limiter"
 
-	"github.com/theQRL/FuzzyVM/filler"
-	"github.com/theQRL/FuzzyVM/generator"
+	"github.com/rgeraldes24/FuzzyVM/filler"
+	"github.com/rgeraldes24/FuzzyVM/generator"
 )
 
 var cutoff = 10

@@ -17,13 +17,13 @@
 package precompiles
 
 import (
+	"github.com/rgeraldes24/FuzzyVM/filler"
 	"github.com/rgeraldes24/goevmlab/program"
-	"github.com/theQRL/FuzzyVM/filler"
 	"github.com/theQRL/go-zond/common"
 	"github.com/theQRL/go-zond/crypto/bn256"
 )
 
-var bn256addAddr = common.HexToAddress("0x6")
+var bn256addAddr, _ = common.NewAddressFromString("Z0000000000000000000000000000000000000006")
 
 type bn256Caller struct{}
 

@@ -17,12 +17,12 @@
 package precompiles
 
 import (
+	"github.com/rgeraldes24/FuzzyVM/filler"
 	"github.com/rgeraldes24/goevmlab/program"
-	"github.com/theQRL/FuzzyVM/filler"
 	"github.com/theQRL/go-zond/common"
 )
 
-var sha256Addr = common.HexToAddress("0x2")
+var sha256Addr, _ = common.NewAddressFromString("Z0000000000000000000000000000000000000002")
 
 type sha256Caller struct{}
 

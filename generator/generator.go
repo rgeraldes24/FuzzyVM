@@ -14,29 +14,29 @@
 // You should have received a copy of the GNU Lesser General Public License
 // along with the fuzzy-vm library. If not, see <http://www.gnu.org/licenses/>.
 
-// Package generator provides means to generate state tests for Zond.
+// Package generator provides means to generate state tests for Ethereum.
 package generator
 
 import (
 	"math/big"
 
+	"github.com/rgeraldes24/FuzzyVM/filler"
 	"github.com/rgeraldes24/goevmlab/fuzzing"
 	"github.com/rgeraldes24/goevmlab/program"
-	"github.com/theQRL/FuzzyVM/filler"
 	"github.com/theQRL/go-zond/common"
 	"github.com/theQRL/go-zond/common/hexutil"
 )
 
 var (
-	fork              = "Cancun"
-	sender            = common.HexToAddress("a94f5374fce5edbc8e2a8697c15331677e6ebf0b")
+	fork              = "Shanghai"
+	sender, _         = common.NewAddressFromString("Za94f5374fce5edbc8e2a8697c15331677e6ebf0b")
 	sk                = hexutil.MustDecode("0x45a915e4d060149eb4365960e6a7a45f334393093061116b197e3240065ff2d8")
 	recursionLevel    = 0
 	maxRecursionLevel = 10
 	minJumpDistance   = 10
 )
 
-// GenerateProgram creates a new zvm program and returns
+// GenerateProgram creates a new evm program and returns
 // a gstMaker based on it as well as its program code.
 func GenerateProgram(f *filler.Filler) (*fuzzing.GstMaker, []byte) {
 	var (
@@ -74,7 +74,7 @@ func createGstMaker(fill *filler.Filler, code []byte) *fuzzing.GstMaker {
 		Code:    []byte{},
 	})
 	// Add code
-	dest := common.HexToAddress("0x0000ca1100f022")
+	dest, _ := common.NewAddressFromString("Z000000000000000000000000000000ca1100f022")
 	gst.AddAccount(dest, fuzzing.GenesisAccount{
 		Code:    code,
 		Balance: new(big.Int),

@@ -22,8 +22,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/theQRL/FuzzyVM/filler"
-	"github.com/theQRL/FuzzyVM/generator"
+	"github.com/rgeraldes24/FuzzyVM/filler"
+	"github.com/rgeraldes24/FuzzyVM/generator"
 	"github.com/theQRL/go-zond/common"
 )
 

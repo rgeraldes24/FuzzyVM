@@ -5,8 +5,8 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/theQRL/FuzzyVM/filler"
-	"github.com/theQRL/FuzzyVM/generator"
+	"github.com/rgeraldes24/FuzzyVM/filler"
+	"github.com/rgeraldes24/FuzzyVM/generator"
 )
 
 // RunFullBench runs a full benchmark with N runs.

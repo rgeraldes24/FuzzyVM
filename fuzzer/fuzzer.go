@@ -28,9 +28,9 @@ import (
 	"strings"
 	"time"
 
+	"github.com/rgeraldes24/FuzzyVM/filler"
+	"github.com/rgeraldes24/FuzzyVM/generator"
 	"github.com/rgeraldes24/goevmlab/fuzzing"
-	"github.com/theQRL/FuzzyVM/filler"
-	"github.com/theQRL/FuzzyVM/generator"
 	"github.com/theQRL/go-zond/common"
 	"github.com/theQRL/go-zond/core/rawdb"
 	"github.com/theQRL/go-zond/core/vm"
@@ -130,19 +130,19 @@ func minimizeProgram(test *fuzzing.GstMaker, name string) (*fuzzing.GstMaker, er
 		acc.Code = code[0:i]
 		gst[name].Pre[addr] = acc
 		// Run and see if the trace still matches
-		var gzondStateTest tests.StateTest
+		var gethStateTest tests.StateTest
 		data, err := json.Marshal(gst[name])
 		if err != nil {
 			panic(err)
 		}
-		if err := json.Unmarshal(data, &gzondStateTest); err != nil {
+		if err := json.Unmarshal(data, &gethStateTest); err != nil {
 			panic(err)
 		}
 		newOutput := new(bytes.Buffer)
 		cfg := vm.Config{}
 		cfg.Tracer = logger.NewJSONLogger(&logger.Config{}, newOutput)
-		subtest := gzondStateTest.Subtests()[0]
-		gzondStateTest.RunNoVerify(subtest, cfg, false, rawdb.HashScheme)
+		subtest := gethStateTest.Subtests()[0]
+		gethStateTest.RunNoVerify(subtest, cfg, false, rawdb.HashScheme)
 		newB := newOutput.Bytes()
 		newIdx := strings.LastIndex(string(newB), "{")
 		if newIdx <= 0 {
